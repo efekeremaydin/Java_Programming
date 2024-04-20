@@ -1,0 +1,80 @@
+1. Replace Task:
+        1.1 Create a method named replace that passes three parameters: integer array, integer index, and integer newElement. The method replaces the element of the array at the given index with the new element and returns the new array.
+                Ex:    
+                    arr = {1,2,3,4,5};
+
+                    replace(arr, 2, 30) ===> {1, 2, 30, 4, 5}
+
+
+        1.2 Create the same functions for double arrays, char arrays, and String arrays
+
+
+2. ReplaceAll Task:
+        2.1 Create a method named replace that passes three parameters: integer array, integer oldElement, and integer newElement. The method replaces all the elements of the array that match the given old element with the given new element and returns the new array.
+            Ex:
+                arr = {10, 10, 20, 30, 40, 30, 30, 30};
+
+                replaceAll(arr, 30, 300) ==> {10, 10, 20, 300, 40, 300, 300, 300}
+
+
+        2.2 Create the same functions for double arrays, char arrays, and String arrays
+
+
+3. Insert Task:
+        1.1 Create a method named insert that passes three parameters: integer array, integer index, and integer element. the method inserts the given element into the given index of the array and returns the new array
+                Ex:
+                    arr = {10, 20, 30, 40, 50};
+
+                    insert(arr, 2, 100) ==> {10, 20, 100, 30, 40, 50}
+
+
+        1.2 Create the same function for double array, char array, and string array
+
+
+4. Swap Task:
+    2.1 Create a method named swap that passes three parameters: integer array, integer i, and integer j. The method swaps the element at index i with the element at index j, and returns the new array
+            Ex:
+                arr = {10, 20, 30, 40, 50};
+
+                swap(arr, 2, 4) ==>  {10, 20, 50, 40, 30}
+
+    2.2 Create the same function for double array, char array, and string array
+
+
+5. Write a program that can retrieve the letters, digits, and special characters from the string
+        Ex:
+            str = "Wooden Spoon!"
+
+        output:
+            letters= "WoodenSpoon";
+            Digits = "";
+            specialChars = " !";
+
+        Note: Use Wrapper class methods 
+
+
+6. Write a program that returns true if the total number of uppercase characters is equal to the total number of Lowercase characters of a string
+        Ex:
+            str = "JAVA java";
+
+        output:
+            true
+
+        Note: Use Wrapper class methods 
+
+
+7. write a program that can combine two String arrays into one ArrayList
+                ex: 
+                    arr1 = {"A", "B", "C"};
+                    arr2 = {"D", "E", "F", "G"};
+                    list ==> {"A", "B", "C", "D", "E", "F", "G"}
+
+
+8. Write a program that can find the maximum & minimum numbers from an ArrayList of integers
+        Ex:
+            list = [1,2,3,4,5];
+
+            output:
+                Maximum number is 5
+                Minimum number is 1
+

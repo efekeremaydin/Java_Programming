@@ -1,0 +1,119 @@
+
+1. Create a class named WebsiteAddress, and write a program that can check if the given website is a valid website or not
+            starts with: www.
+            ends with: .com, .edu, .gov
+
+
+2. Create a class named StartsWithX and write a program that asks the user to enter a word. If the work starts with x, replace it with a.
+                    Input:
+                        xcodex
+                    Output:
+                        acodex
+
+
+3. Create a class named ReplaceX, and write a program that asks the user to enter a word. and replace all the x or X with the character a
+                    Input:
+                        xcodeX
+                    Output:
+                        acodea
+
+
+4. Create a class named ReallyNeverMind. Ask the user to enter a word. If the word ends with "ly", print "really???",  otherwise, print "never mind"
+
+
+
+5. Create a class named WithoutFirstChar. Ask the user to enter two words. Print the first word without its first character 
+    then print the second word without its first character.
+            Input:
+                apple
+                banana
+            Output:
+                ppleanana
+
+6. Create a class named CombineWords. Ask the user to enter two words. Then add them together and print. 
+    But if the last letter of the first word and the first letter of the last letter are the same, print that character once.
+
+                Input:
+                    one
+                    eight
+                Output:
+                    oneight
+
+
+
+
+7. Write a program that asks the user to enter first and last names, and then prints the full name in regular format (first character in upper case)
+
+                    input:
+                        firstName = "cyDEo"
+                        lastName = "SCHOOL";
+
+                    output:
+                        Cydeo School
+
+8. Create a class called EmailTask1. 
+   Assume that the email address is constructed by the person's first name and followed by an underscore and last name.
+
+    Write a program that can swap the first name with the last name in the email (Separated by an underscore).
+    If the email doesn't contain an underscore print the given input email.    
+
+        Ex:
+            input: mike_tyson@gmail.com
+            output: tyson_mike@gmail.com
+
+
+9. Create a class called EmailTask2.
+   Assume that the email address is constructed by the person's first name and followed by an underscore and last name.
+
+   Write a program that will print out information about the user based on email. Print first name, last name, and domain.
+
+   First and Last names should be printed in the proper format - uppercase first letter and remaining lowercase.
+
+           Ex:
+               input: 
+                   craig_federighi@apple.com
+
+            Output: 
+                First name: Craig
+                Last name: Federighi
+                Domain: apple
+
+10. Create a class called TipCalculator, and write a program for a tip calculator. 
+    There will be different service quality benchmarks that will determine the tip given. 
+    There will also be the ability to calculate based on the number of people in the party and if there is a split of the bill or not.
+        
+        Poor = 5%, Fair = 10%, Good = 15%, Great = 20%, Excellent = 25%
+
+    The program should ask the user to enter:
+            - Split or No split (Yes or No), 
+             - Enter the number of people (number)
+             - Enter the check amount (number) 
+             - Service Quality (String) 
+
+    And then it should display:
+             The number of people who entered
+             Total to pay
+             Total tip
+             Total per person
+             Tip per person:
+
+        Ex: 
+            Split or No Split (Yes or No)?
+            YeS
+            Enter the number of people
+            4
+            Enter the check amount:
+            476
+            How was the service quality? (Excellent/Great/Good/Fair/Poor)
+            ExCElLeNt
+
+            output:
+                Number of people entered: 4
+                Total to pay: 595.0
+                Total tip: 119.0
+                Total per person: 148.75
+                Tip per person: 29.75
+
+
+
+

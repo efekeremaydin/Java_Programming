@@ -1,0 +1,95 @@
+1. Create a class called  CappuccinoBuyer. A variable named Size is given, write a program that can display the price and calories of cappuccino
+
+			Valid sizes are tall, grande, and venti and their price & calories are:
+
+						tall: 
+								price is $3.69
+								90 calories
+
+						grande:
+								price is $3.99;
+								120 calories
+
+						venti:
+								price is $4.29
+								150 calories
+
+			If the size is invalid then the output should be "Invalid Size"
+
+			Note: MUST use nested if
+
+
+2. Create a class called Browser. Write a program that can display the name of the selected browser
+        1. declare a String variable named browserName
+        2. Assume that the valid browsers are chrome, firefox, opera, safari, and edge.
+        3. if the browser name does not match with the valid browser names, output should be: Invalid Browser Name
+
+        Ex:
+            String browser = "chrome";
+
+        Output:
+            Chrome Browser is selected
+
+        Note: MUST use nested if
+
+3. Create a class called CrewAndPassenger; given the number of people on the ship (int number), determine how many need to be crew members and how many can be passengers. Print how many of each type there should be.
+    
+            Total: 50  ====> 20 crew, 30 passengers
+            Total: 75  ====> 25 crew, 50 passengers
+            Total: 100 ====> 30 crew, 70 passengers 
+            Any other number of people on the ship is not valid 
+
+            NOTE: MUST USE NESTED IF. DO NOT USE MORE THAN ONE PRINT STATEMENT
+
+
+4. Create a class called Grade, and a char variable named Grade is given. write a program to print the following messages:
+            'A': excellent
+            'B': great job
+            'C': good
+            'D': passed
+            'F': failed
+            Otherwise: invalid
+
+            NOTE: MUST USE NESTED IF. DO NOT USE MORE THAN ONE PRINT STATEMENT
+
+5. Create a class called AgeGroups, and write a program that can define the age groups of a person
+            age groups are:
+                    Teenager (< 21)
+                    Adult   (>=21 && <55 )    
+                    Senior  ( > 55 )
+
+             if the age is negative or greater than 150, print "invalid"
+
+             NOTE: MUST USE NESTED IF. DO NOT USE MORE THAN ONE PRINT STATEMENT
+
+
+6. Create a class called FINRA; write a function that prints out the number. but for a number which is a multiple of 3, print "FIN" instead of the number, and for a number which is a multiple of 5, print "RA" instead of the number. and for a number that is a multiple of both 3 and 5, print "FINRA" instead of the number.
+            ex:
+                number = 3
+
+                output:
+                      FIN
+
+
+                number = 10
+
+	            output:
+	                RA
+
+
+            	number = 15
+
+	            output:
+	                FINRA
+
+7. Create a class called GradeLevel; given a number(byte) grade level, determine and print which school type someone is in.
+            grade level and types are:
+                    1-5: Elementary school 
+                    6-8: Middle school
+                    9-12: High school
+                    13-16: College
+                    17-18: Grad School
+                    
+                    For Any Other grade: Invalid grade level given
+
+            NOTE: MUST USE NESTED IF. DO NOT USE MORE THAN ONE PRINT STATEMENT

@@ -1,0 +1,147 @@
+1.  Create a class named Marriage Proposal and Write a program for the  marriage proposal program asking the user, "Will you marry me?"
+    if the answer is yes, print "Congrats."
+    if the answer is no, print "Goodbye"
+    if the answer is neither yes nor no, print "Invalid answer, please re-enter" and repeat it until the user enters either yes or no
+
+
+2. Create a class named PositiveNegative and write a program that asks the user to enter a number for 5 times, and print how many positive and negative numbers the user entered
+			Ex:
+				Inputs:
+					10
+					20
+					-1
+					0
+					3
+
+				Output:
+					3 positive and 1 negative
+
+
+3. Create a class named FrequencyOfChar and Write a program that asks the user to enter a string and a char, which returns the frequency of the char from the given string
+            Ex:
+                inputs:
+                    str = "aabcccd";
+                    char = 'c';
+
+                output: 3
+
+                inputs:
+                    "Java programming language"
+                    'g'
+
+                output: 4
+
+4.  Create a class named DivideTwoNumbers and Write a program that can divide two positive numbers without using / (division) and * (multiplication) operators.
+
+
+5. Create a class named UntilNegative and Write a program that calculates the sum of numbers entered by the user until the user enters a negative number.
+
+
+6. Create a class named DivisibleBy and Write a program that can print the numbers between 1 ~ N that can be divisible by 3, 5, and 15.
+	            if the number can be divisible by 3, 5, and 15,
+	                then it should only be displayed in DivisibelBy15' section
+
+	            if the number can be divisible by 3 but cannot be divisible by 15,
+	                then it should only be displayed in DivisibelBy3' section
+
+	            if the number can be divisible by 5 but cannot be divisible by 15,
+	                then it should only be displayed in DivisibelBy5' section
+
+	            EX:
+	                input: 100
+
+	                Output:
+	                     Divisible By 15: 15 30 45 60 75 90
+
+	                     Divisible By 5:  5 10 20 25 35 40 50 55 65 70 80 85 95 100
+
+	                     Divisible By 3: 3 6 9 12 18 21 24 27 33 36 39 42 48 51 54 57 63 66 69 72 78 81 84 87 93 96 99
+
+
+7. you are writing a code for the log-in function of the Cydeo Application, assume that your credentials are:
+                    username: Cydeo
+                    password: Cydeo123
+
+        Ask the user to enter their credentials. 
+                If credentials are matched, your program should print "Logged in." 
+                If the credentials are not matched, the program should allow the user to have three attempts to enter the correct credentials, and if all three attempts fail, then print "Your account is locked."
+
+
+
+
+Extra Spicy:
+
+	8. Create a class called RoomReservation, and write a program for the room reservation; your program asks the user if they want to reserve a room.
+    	if the user enters yes, then ask which type of room the user wants to reserve. if the user entered no, print "Have a nice day"
+    			(if the user entered any invalid answer (other than yes/no) ask the user to reenter until the user provides a valid entry)
+
+	            King Bed ==> 120$
+	            Queen Bed ==> 100$
+	            single Bed ==> 80$
+
+            the program should be able to display the room he/she reserved and the total price of the room.
+
+            (if the user selected an invalid room, ask the user to reselect the room until the user provides a valid entry)
+
+
+	9. Create a class called UniqueCharacters, Write a program that can return the unique characters from a String
+
+	            Ex:
+	                input:
+	                    AABCCD
+
+	                output:
+	                    BD
+
+	            Hint: You will need indexOf() and lastIndexOf()
+	                  if the first and last index numbers of the character are the same, then it's a unique
+
+
+	10. Create a class called InsuranceQuote, and write a program that can calculate the insurance cost of a person based on the following info:
+	    		1. Ask the user to enter your name
+	    		2. Ask the user to enter your gender
+	    			(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+				3. Ask the user if he/she is married(Yes/No)
+						(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+				4. Ask the user to enter your age
+						(age can not be negative or greater than 120)
+						(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+				5. Ask the user to enter how many miles he/she drives in a day
+						(mileage can not be negative or less than 5)
+						(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+				6. Ask the user if he/she wants full coverage or liability insurance.
+
+				7. Ask if he/she had any accidents or claims in the past 5 years (Yes/No)
+						(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+
+				8. Ask the user if his/her car has an anti-theft device (Yes/No)
+						(if the user enters an invalid entry, ask the user to re-enter until the user provides a valid entry)
+
+			Calculate the price of the insurance and display all the info of the user
+
+				Insurance Quote calculation:
+					starting prices for liability:
+						age < 25 ===> 90
+						age >= 25 ==> 50
+
+						miles <= 10 ====> $10
+					    miles > 10 and miles <= 50 ==> $30
+					    miles > 50 ===>  $50
+
+					starting prices for full coverage:
+						age < 25 ===> 160
+						age >= 25 ==> 120
+
+						miles <= 10 ====> $20
+					    miles > 10 and miles <= 50 ==> $40
+					    miles > 50 ===>  $70
+
+
+				    If the car has an anti-theft device ==> 5% discount
+				    If he/she had any accidents or claims in the past 5 years ===> 15% extra charge
+				    If he/she never had any accidents or claims in the past 5 years ==> 10% discount
+				    If he/she is married ==> 5% discount
+
+
+
+

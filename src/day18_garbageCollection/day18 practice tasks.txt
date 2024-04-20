@@ -1,0 +1,60 @@
+1. Write a program that can return the character that has the highest frequency from a string
+	Ex:
+		str = "aaabbccccddeeee"
+
+		output:
+			c
+			e
+
+
+2. Create a custom class named Contact
+		Attributes:
+			name
+			phoneNumber
+			email
+
+		Action:
+			setInfo(): sets all the fields
+			call(): displays the message "Calling $name now"
+			sendMessage(): displays the message "sending a message to $phoneNumber now"
+			sendEmail(): displays the message "sending email to $email now"
+
+
+3. Create a custom class named Offer
+        Attributes:
+                location
+                companyName
+                jobTitle
+                salary
+                hasBenefit
+                hasPTO
+                isWFH
+                isFullTime
+
+        Actions:
+            setInfo(): sets all the instance variables
+            toString(): returns the full info of the Offer Object
+
+
+4. Create a class named Carpet:
+	 		Attributes:
+                width
+                length
+                unitPrice
+                isPersian
+
+		
+            Actions:
+        		setInfo(): sets all the fields
+                calcCost(): should be able to calculate the total cost of the carpet and return it as double
+                toString(): should be able to display all the info about the carpet including the total cost of the carpet as calculated by calcCost()
+
+
+		    total price of carpet = (width*length) * unit-price
+
+		    if the carpet is Persian  carpet, add 200$ to the totalPrice
+
+
+
+
+

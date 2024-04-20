@@ -1,0 +1,112 @@
+1. CydeoStudent Task
+		1. Create a class named CydeoStudent:
+
+				Attributes:
+					instances: name, age, gender, id, grade, batchNumber, groupNumber
+					statics: schoolName, magicWord
+
+				Add a constructor that can set All the fields (instances)
+
+				Actions:
+					study()
+					attendClass()
+					printSchoolName(): displays the school name
+					printProgLanguage(): displays the name of the programming language
+					toString()
+
+
+2. Circle Task:
+		1. Create a class named Circle:
+
+				Attributes:
+					instance: radius, diameter
+					static: pi
+
+				Add a constructor that can set All the fields (instances)
+					HINT: we only need to know the radius to set the radius & diameter
+
+				Actions:
+					calcArea(): returns the area of the circle
+					calcPerimeter(): returns the perimeter of Circle
+					printPi(): displays the PI value
+					toString(): displays the radius, diameter, pi, area, and perimeter of the circle when the object of a circle is passed in the print statement
+
+
+3. Person Task:
+		1. Create a class named Person:
+
+				Attributes:
+					Instance: name, age, gender
+
+					static: isHuman(boolean), hasNose(boolean), hasWings (boolean), numberOfHead, numberOfEyes,
+
+				Add a constructor that can set All the fields (instances)
+
+
+				Actions:
+					eat(String food)
+					drink(String drink)
+					sleep()
+					toString()
+
+4. Restaurant Task:
+		4.1  Create a class called Server
+                   
+	        Attributes:
+	                name (String), employeeID (int), hourlyRate (double), fullTime (boolean), hire_date (LocalDate)
+		
+			Add A constructor that can set all the fields.
+
+	        Actions: (all void methods)    
+	            takeOrder(): server's name + "is taking an order"
+	            cleanTable(): server's name + "is cleaning the table"
+	            toString(): Returns (String) all the information of a Server
+	                -> Extra: For fullTime status, instead of printing a boolean value, print "full-time" or "part-time."
+
+		4.2 Create a class called Chef
+		                   
+		            Attributes:
+		                name (String), employeeID (int), hourlyRate (double), fullTime (boolean)
+			
+			   Add A constructor that can set all the fields.
+
+		            Actions: (all void methods)		                	             
+		                makeOrder(): chef's name + "is making an order"
+		                washDishes(): chef's name + "is washing the dishes"
+		                toString(): Returns (String) all the information of a Chef
+		                    -> Extra: For fullTime status, instead of printing a boolean value, print "full-time" or "part-time."
+
+		4.3 Create a class called Restaurant
+	                   
+	            Attributes:
+	                Owner (String), Location (String), numberOfStars (int)
+	                Servers (ArrayList of Server objects)
+	                Chefs (ArrayList of Chef objects)
+
+                Add a constructor that sets the owner, location, and number of stars.
+
+	            Actions: (all void methods)
+	                
+	                hireServer(Server server): accepts a server object and adds it to the Servers ArrayList 
+	                hireServer(Server [] servers): accepts an array of Server objects and adds all of them to the Servers ArrayList               
+	              
+	                hireChef(Chef chef): accepts a chef object and adds it to the Chefs ArrayList 
+
+	                hireChef(Chef [] chefs): accepts an array of Chef objects and adds all of them to the Chef ArrayList
+
+	                terminateChef(int employeeID): removes the chef with the matching ID from the ArrayList of chef
+
+	                terminateServer(int employeeID) removes the server with the matching ID from the ArrayList of the server
+
+	                toString(): Return (String) all the information on a Restaurant object. No need to print the whole list of Servers or Chefs. Print the number of Servers and Chefs alongside the other information.
+	                
+
+		4.4. Create a class LocalRestaurant that has a main method with the following: 
+	        	- Make a Restaurant object 
+	        	- Create an array of servers with their information set. Add those initial servers to the ArrayList of Servers in the Restaurant object
+	            - Create an array of chefs with their information set. Add those initial chefs to the ArrayList of Chefs in the Restaurant object
+
+	            - Print your whole restaurant's information 
+
+
+

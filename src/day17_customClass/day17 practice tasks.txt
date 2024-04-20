@@ -1,0 +1,73 @@
+1. Create a custom class named Car
+		Attributes:
+			make, model, year, color, price
+
+		Actions:
+			setInfo(): sets all the fields of the car object
+			toString(): when a car object is passed in a print statement, it should display all the information of the car object
+			start()
+
+
+2. Create a custom class named Student
+		Attributes:
+			name, gender, age, studentId, grade, isFullTime 
+
+		Actions:
+			setInfo(): sets all the fields of the student object
+			toString(): when a car object is passed in a print statement, 
+					it should display all the information of the student object
+			study()
+
+
+3. create a custom class named Rectangle
+		Attributes:
+		    length, width
+
+		Actions:
+		    setInfo(): sets the length and width of the rectangle object
+		    calculateArea(): calculates the area of the rectangle, returns it as double
+		    calculatePerimeter() calculates the perimeter of the rectangle, and returns it as a double
+		    toString(): when a rectangle object is passed in the print statement
+		    		it should display the length, width, area, and perimeter of the Rectangle object
+
+
+4. Create a custom class named SalaryCalculator
+        Attributes:
+            hourlyRate, stateTaxRate, federalTaxRate, weeklyHours
+
+            (stateTaxRate and federalTaxRate will be given as percentage, you will responsible for converting them to decimals)
+
+        Actions:
+            setInfo(): sets all the fields of SalaryCalculator object
+            salary(): calculates the salary ( hourlyRate * weeklyHour * 52) and returns it as double
+            stateTax(): calculates the total state tax, and returns it as double
+            federalTax(): calculates the total federal tax, and returns it as double
+            salaryAfterTax(): calculates the salary after tax, and returns it as double
+            toString(): when a SalaryCalculator object is passed in a print statement,
+            	it should displays the salary, stateTax, federalTax, salaryAfterTax of the Object
+
+
+5. Create a class named Address
+    Attributes:
+        buildingNumber, street, city, state, zipCode
+       
+    Actions
+            setInfo: sets all the instances
+            toString: returns the address
+                        EX:
+                            7925 Jones Branch Dr
+                            McLean Va, 22012
+
+
+6. Create a class called Item
+    Attributes:
+        name, unitPrice, quantity
+
+    Actions:
+    	setInfo(): sets all the fields of Item object
+        calcCost(): returns the total price of the Item
+        toString(): when a SalaryCalculator object is passed in a print statement, it should display the full information of the item object
+
+
+
+

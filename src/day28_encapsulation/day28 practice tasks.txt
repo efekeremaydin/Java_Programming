@@ -1,0 +1,161 @@
+1. Create a class named Circle
+
+        Private variables:
+            radius
+
+        Public variable:
+            pi
+
+         Encapsulate all the private fields.
+
+                 1. The radius of the circle can not be zero or negative
+
+         Add a constructor that can set the radius of a circle when a circle object is created
+                 (If the arguments are not valid, it should not be set to the instances)
+
+         Methods:
+             calcArea()
+             calcPerimeter()
+             toString(): displays the radius, area, and perimeter of the circle when the circle object is passed in the print statement
+
+
+2. Create a class named Square:
+        Private variables:
+            side
+
+        Encapsulate all the fields.
+
+            Condition:
+                The side of the square should not be negative
+
+        Add a constructor that allows the user to set all the fields when the object is created.
+                       
+
+        Methods:
+            calcArea(): returns the area of square
+            calcPerimeter(): returns the perimeter of the square
+            toString(): can display the side, area, and perimeter of the square when the object is passed in the print statement
+
+3. Create a class named Rectangle:
+        Private variables:
+            width, length
+
+        Encapsulate all the fields.
+                Conditions:
+                    width of the rectangle should not be negative
+                    length of the rectangle should not be negative
+
+        Add a constructor that allows the user to set all the fields when the object is created.
+                (If the arguments are not valid, they should not be set to the instances)
+
+        Methods:
+            calcArea(): returns the area of the rectangle
+            calcPerimeter(): returns the perimeter of the rectangle
+            toString(): can display the width, length, area, and perimeter of the rectangle when the object is passed in the print statement
+
+3. create a class called Item
+        private variables:
+            name, unitPrice, quantity
+
+        Encapsulate all the fields:
+            Conditions:
+                name can not be empty or blank
+                name can not contain any special characters other than space
+                name must start with letters
+                unit price can not be negative
+                quantity can not be negative
+                if the Item name is toilet paper (case insensitive), then the quantity can not be more than 1
+
+
+        Add a constructor that allows the user to set all the fields when the object is created.
+                (If the arguments are not valid, they should not be set to the instances)
+
+        Methods:
+            calcCost(): returns the total cost
+            toString(): returns the name, unit price, quantity, and total cost info as calculated by calcCost()
+
+
+4. Create a class named Pizza:
+                Private variables:
+                    size, numberOfCheeseTopping, numberOfPepperoniTopping
+
+                Encapsulate all the fields.
+                        Conditions:
+                            The size of the pizza can only be small, medium, or large. case insensitive
+
+                            The number of cheese toppings can not be negative; the maximum number of cheese toppings is:
+                                        small: 3
+                                        medium: 4
+                                        large: 5
+
+                            The number of pepperoni toppings can not be negative; the maximum number of pepperoni toppings is:
+
+                                        small: 4
+                                        medium: 5
+                                        large: 6
+
+                Add a constructor that allows the user to set all the fields when the object is created.
+                                (If the arguments are not valid, they should not be set to the instances)
+
+
+                Methods:
+                    calcCost(): returns the total cost of the pizza
+                    toString(): returns a String containing the pizza size, quantity of each topping, and the pizza cost as calculated by calcCost()
+
+
+        Pizza cost is determined by:
+                        S: $10 + $2 per topping
+                        M: $12 + $2 per topping
+                        L: $14 + $2 per topping
+
+
+
+5. Create a custom class named Candy
+        private variables:
+            brand (String), quantity (int), price (double), hasPeanuts (boolean)
+
+        Encapsulate All the private fields.
+                (the price of candy can not be set to negative)
+                (quantity of candy can not be set to zero or negative)
+
+        Add a constructor that allows the user to set all the fields when the object is created.
+                (If the arguments are not valid, they should not be set to the instances)
+
+        Extra methods:
+            toString():
+                if the price is zero, print "free" instead of 0
+
+        5.1 Create a class named CandyFactory
+                Create an ArrayList of candies
+                Add five objects of candies
+                Use a for each loop to print the brand and price of each candy
+
+
+6. create a class named Credentials
+            Variables:
+                username, password
+
+            Encapsulate all the fields.
+                    (The password MUST be a strong password)
+
+
+            Add a constructor that allows the user to set all the fields when the object is created.
+                        (If the arguments are not valid, it should not be set to the instances)
+
+            Methods:
+                isStrongPassWord(): takes an argument of string and verifies if the given string is a strong password, returns a boolean
+                            Characteristics of strong passwords are:
+                                    1. The password MUST be at least eight characters long and should not contain space
+                                    2. The password should at least contain one letter 
+                                    3. The password should at least contain one special character
+                                    4. The password should at least contain a digit
+
+                toString() 
+
+
+
+
+
+
+
+

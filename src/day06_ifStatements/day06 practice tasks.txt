@@ -1,0 +1,113 @@
+1. Create a class named MedianNumber. write a program that can find the median number between three DIFFERENT given integers
+		
+		Ex:
+                a = 10, b= 15, c = 20;
+
+            Output:
+                15 is the median number
+
+
+2. Create a  class named NumberToWord, and write a Java program that can convert numbers between 0 ~ 9 into words
+			Ex:
+				number = 1;
+
+			output:
+				One
+
+		Note: Do not use more than one print statement
+
+
+3. Create a class called Calculator; given two double variables named n1 & n2, and a char variable named mathOperator, write a program that can calculate the result of n1&n2 based on the given math Operator.
+
+		char operator -> -, +, *, /
+
+		when operator is + : add num1, num2
+		when operator: - : minus num1, num2
+		when operator: * : multiply num1, num2
+		when operator: / : divide num1, num2
+		for any other operators: print "invalid operator"
+
+		Ex:
+			n1 = 10, n2= 20, mathOperator = '+'
+
+		output:
+			30
+
+4. Create a class named ChooseLanguage, Given an integer variable named selection that has a number between 1~5, Write a program that can select the language based on the number that's given in the selection and prints the following message:
+
+		for 1: Hello, thank for your call
+		for 2: Hola, gracias para llamar
+		for 3: Merhaba, aradiginiz icin tesekkurler
+		for 4: Privet, spasibo za vash zvonok
+		for 5: Merci ,pour votre appel
+
+	Note: Do not use more than one print statement
+
+
+5. Create a class named CharacterIdentity, and write a program that can identify if the given character is a digit or Alphabetic Character(A~Z or a~Z) or a special character
+		
+		Ex:
+			ch = '@'
+
+		output:
+			Special Character
+
+
+			ch = '1'
+
+		output:
+			digit
+
+		HINT: You may wanna check out the numbers of the characters on ASCII table
+
+
+
+
+6. Create a class named AgeGroups, an integer variable named age is declared and given. write a program that can define the age groups of a person
+
+	             age groups are:
+	                    infant (1 - 2)
+	                    Toddler (3 - 5),
+	                    Kid (6 - 9),
+	                    Pre-Teen (10 - 12),
+	                    Teenager (13 - 17),
+	                    Young Adult (18 - 20),
+	                    Adult (21 - 39),
+	                    Young Middle-Aged Adult (40 - 49),
+	                    Middle-Aged Adult (50 - 54),
+	                    Very Young Senior Citizen (55 - 64),
+	                    Young Senior Citizen (65 - 74),
+	                    Senior Citizen (75 - 84),
+	                    Old Senior Citizen (85+)
+
+            Note: Do not use more than one print statement
+
+
+7. Create a class named EqualNumbers, and write a program that can check the equality of the three given numbers
+	 			declare 3 numbers n1, n2, n3
+	 			if all are equal ==> print "all equal"
+	  			if only n1 and n2 are equal  =>print  "n1&n2 are equal"
+	   			if only n2 and n3 are equal ==>print "n2&n3 are equal"
+	   			if only n3 and n1 are qual ==>print "n3&n1 are equal"
+				if none of them are equal ==> none of them are equal
+
+
+
+8. Create a class named OxygenTank. You are diving in the ocean. Your oxygen tank has a certain level (number) and you must print a message based on the level:
+                Above 90 -  Your tank is full
+                Above 80 -  Still okay
+                Above 70 -  Don't go too far
+                Above 60 -  Start to head back
+                Above 50 -  Be careful now you at at 50%
+
+                USE ONE PRINT STATEMENT ONLY
+                
+
+9. Create a class named NetIncomeCalc, Write a program that can calculate the salary after tax based on the following requirements
+                the tax rates are:
+                        35% for a salary of 130K or more
+                        30% for a salary of 100K to 129k
+                        25% for a salary of 80K to 99K
+                        20% for a salary of 79K or less
+
+                in addition, if the person is married, he/she will pay 5% less tax

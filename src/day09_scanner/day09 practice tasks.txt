@@ -1,0 +1,130 @@
+1. Ask the user how many people they live with:
+            if the user lives with fewer than 3 people: print "Live with less than 3 people"
+            if the user lives with 3 - 6 people: print "Live with 3 - 6 people"
+            if the user lives with more than 6 people: print "Live with "more than 6 people"
+
+
+2. Create a class named Circle:
+            1.1 Ask the user to enter the radius of the circle
+            1.1 Calculate the area and perimeter of the circle by using the radius
+
+3. Create a class named GradeReport:
+            2.1 Ask the user to enter his/her score
+            2.2 Print the grade of the student (A, B, C, D, F)
+            2.3 If the user enters an invalid score (negative or more than 100) print "Invalid Score"
+
+
+4. Create a class named SpeedCheck and write a program for the speed check. 
+	A variable named speedLimit is given
+	Ask the user to enter the current speed, if the current speed is over the speed limit then print slow down, otherwise do not print anything
+        Ex:
+            speedLimit = 55;
+
+            Enter current speed:
+            105
+
+            output:
+            	You're driving 50 mph over the limit. Slow down!
+
+
+5. Create a class named CentsToDollars, and write a program that can convert cents to dollars
+	if there is any remainder include them in the result of cents
+            Ex:
+                Enter cents
+                225
+
+                output:
+                225 cents equal to 2 dollars and 25 cents
+
+
+6. Create a class named MilesToKM, and write a program that can convert Miles to KM
+            Ex:
+                Enter miles:
+                10.0
+
+                output:
+                10.0 miles equal to 16.09 kilometers
+
+
+7. Create a class named PlaceAnOrder:
+                Ask the User to enter the product name (multiple words)
+                Ask the user to enter the price  (double)
+                Ask the user to enter the quantity (int)
+                Ask the user to enter their first name (String, single word)
+
+            Print in the following format: 
+                Ex: 
+                    Input: "Apples" , 1.5, 5. "Luke"
+
+                    Output: 
+                        Luke, your order for 5 Apples has been places. Your total is 7.5.
+
+8. Create a class named StockMarket: 
+        - Ask the user how many total shares they have already? (int)
+            -> If the user gives 0 or give a negative number none of the rest condition should be executed 
+
+        - Ask the user how much their total value in the stock market is (double)
+        - Ask the user to enter the name of the company they have the most shares in (String, multiple words)
+        
+        - Print in the following format: 
+            Ex: 
+                inputs: 100, 25000, Apple INC
+
+            "Your total stock market holding is $25000 which is made up of 100 shares. Apple INC is your company holdings"
+
+
+9. Create a class named Calculator:
+		- Ask the user to enter the first number (double)
+		- Ask the user to enter a math operator (char)
+		- Ask the user to enter the second number
+
+		- print the calculation result, 
+		- if the operator is not a valid math operator (+, -, *, /), then print "Invalid entry"
+
+
+10. Create a class named SalaryCalculator:
+		- Ask the user to enter his/her hourly rate
+		- Ask the user how many hours he/she works in a week
+		- Ask the user to enter state tax (in percentage)
+		- Ask the user to enter federal tax (in percentage)
+
+         -Calculate the:
+                   salary
+                   State tax
+                   federalTax
+                   Total tax
+                   Net income
+
+
+11. Create a class called MyInfo. Write a program that can ask the user to:
+            1. Enter your age (int)
+            2. Enter your gender (String- One word ONLY)
+            3. Enter your full name (String- Multiple words)
+            4. Enter your phone number (long)
+            5. Enter your zip code (int)
+            6. Enter your School name (String- Can be Multiple words)
+            7. Enter your city name (String- Can be Multiple words)
+            8. Enter your state name (String- One word ONLY)
+            9. Enter your building number (int)
+            10. Enter your Street name
+
+        MAKE SURE USER CAN ENTER ALL THE INPUT
+
+        Display all the inputs that the user entered in the following order in separate lines:
+
+            1. full name
+            2. age
+            3. gender
+            4. phone number
+            5. address:
+                        buildingNumber Street
+                        City, State ZipCode
+
+            6. school name
+
+
+
+
+
+
+
