@@ -37,7 +37,7 @@ public class Animal {
     }
 
     public String toString() {
-        return getClass().getSimpleName() + // instead of Animal, you should use these methods to get the class name at the beginning
+        return getClass().getSimpleName() + "{" +// instead of Animal, you should use these methods to get the class name at the beginning
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                  ", age=" + age +
