@@ -1,6 +1,7 @@
 package day29_inheritance.animalTask;
 
 public class Dog extends Animal{ // is a rel. Dog IS AN Animal. ALL Char. of Animal are inherited to the Dog
+    // it's not only extending to Animal it's also extending to Object
     //      Child        Parent
     // one in the LEFT side of EXTENDS keyword is child
     // one in the RIGHT side of EXTENDS keyword is parent
@@ -30,8 +31,9 @@ public class Dog extends Animal{ // is a rel. Dog IS AN Animal. ALL Char. of Ani
 
  */
 
-    public void bark(){
-        System.out.println(name + " is barking");
+    public void bark(){ // if you added this m to Animal class then all animals would be barkin
+        //THAT'S WHY IF A METHOD IS NOT FOR ALL THE SUBCLASSES THEN YOU SHOULD NOT ADD IT TO THE SUPER CLASS
+        System.out.println(getName() + " is barking");
 
     }
 

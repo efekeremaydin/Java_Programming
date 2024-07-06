@@ -6,11 +6,11 @@ public class Cat extends Animal{ // less and efficient code
     // easier to maintain, read, manageable
 
     public void meow(){
-        System.out.println(name + " is meowing");
+        System.out.println(getName() + " is meowing");
     }
 
     public void scratch(){
-        System.out.println(name + " is scratching");
+        System.out.println(getName() + " is scratching");
     }
 
 

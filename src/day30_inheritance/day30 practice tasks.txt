@@ -1,0 +1,187 @@
+bookTask:
+	1. create a class named Book:
+			variables:
+				title, type, author, price
+
+			Encapsulate all the fields
+					Conditions:
+						1. price can not be set to negative
+
+			Add a constructor that can set all the fields
+
+			Methods:
+				toString()
+
+	2 Create a subclass of Book named EBook:
+			Extra variables:
+				size, pages
+
+			Encapsulate all the extra fields
+					Conditions:
+						1. pages can not be set to zero or negative
+
+			Add a constructor that can set all the fields
+
+			Extra Methods:
+				readBook()
+
+	3 Create a sub-class of Book named AudioBook:
+			Extra variables:
+				length, narrator
+
+			Encapsulate all the extra fields
+					Conditions:
+						1. length can not be set to zero or negative
+
+			Add a constructor that can set all the fields
+
+			Extra Methods:
+				toString()
+
+
+sportTask:
+	1. Create a class named Sport
+			variables:
+				name, numberOfPlayers, numberOfReferre, rules
+
+			Encapsulate all the fields
+					Conditions:
+						1. numberOfPlayers can not be set to zero or negative
+						2. numberOfReferre can not be set to zero or negative
+
+			Add a constructor that can set all the fields
+			
+			methods:
+				play()
+				toString()
+
+		2. create the following sub classes of Sport:
+				1. Basketball
+				2. Baseball
+				3. Football
+				4. AmericanFootball
+
+			Add any missing variables or methods
+
+			Note: you can search them on google
+
+
+planetTask:
+	1. create a class called Planet
+			variables:
+					name, mass, radius, surfaceGravity, surfaceArea, volume, population
+
+			Encapsulate all the fields
+
+			Add a constructor that can set all the fields
+
+			methods:
+				toString()
+
+	2. create the following subclasses of Planet
+			1. Earth
+			2. Moon
+			3. Mercury
+			4. Venus
+
+			Note: you can search them on google
+
+
+cryptoTask
+	1. create a class called CryptoToken
+			variables:
+				price, quantity, marketCap, volume, circulatingSupply, isMineable (boolean)
+
+			Encapsulate all the fields
+				Conditions:
+					1. price can not be set to zero or negative
+					2. quantity can nt set to negative
+					3. marketCap can not be zero
+
+			methods:
+				toString()
+				totalPrice(): returns the total price of the cyrpto totek ( price * quantity)
+
+	2. create 5 sub classes of CryptoToken:
+			Bitcoin
+			Ethereum
+			Cardano
+			XRP
+			Doge
+
+	3. create a class named MyWallet
+
+		create one object for each CryptoToken 
+
+		calculate the total Asset
+
+
+
+deviceTask (Extra Spicy)
+	1. Create a class named Device
+			Variables:
+				brand, model, color, size, price
+				hasBattery, hasPowerButton
+
+			Encapsulate all the fields
+					Conditions:
+						1. brand, model can not be null (
+						2. brand, model can not be empty or blank
+						3. price can not be zero or negative
+
+			Methods
+				turnOn()
+				turnOff()
+				toString()
+
+
+	2. Create The following sub-classes of Device
+
+			1. Phone
+				Extra methods:
+					call(), text()
+
+			2. TV
+				Extra methods:
+					channelUp()
+					channelDown()
+
+			3. Computer
+				Add any extra variables/methods if needed
+
+	3. Create the following sub-classes of Phone and add any extra methods that are needed:
+
+				1. Iphone
+				2. Samsung
+				3. BlackBerry
+				4. Google
+				5. Nokia
+
+
+	4. Create the following sub-classes of Computer and add any extra methods that are needed:
+				1. PersonalComputer
+				2. Desktop
+				3. Laptop
+
+	5. Create the following subclasses of TV and add any extra methods that are needed:
+				1. SmartTV
+
+
+	6. Create a class named MyDevices:
+			Create the objects of each subclasses and 
+
+			test all the functions of each object
+
+            Analyze the relationships between the classes 
+
+
+
+
+
+
+
+
+
+
+
+
