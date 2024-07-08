@@ -78,9 +78,11 @@ public class Phone {
         setColor(color);
     }
 
-    private void call(long phoneNumber){
+    public void call(long phoneNumber){
+        System.out.println(getModel() + " is calling " + phoneNumber);
     }
-    private void text(long phoneNumber){
+    public void text(long phoneNumber){
+        System.out.println(getModel() + " is texting to " + phoneNumber);
     }
 
     public String toString() {
