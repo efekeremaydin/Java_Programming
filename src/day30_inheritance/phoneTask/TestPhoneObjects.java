@@ -32,6 +32,9 @@ public class TestPhoneObjects {
 //        iphone.selfDefense();
 //        samsung.selfDefense();
 
+        System.out.println(iphone);
+        System.out.println(samsung);
+        System.out.println(nokia);
 
 
 

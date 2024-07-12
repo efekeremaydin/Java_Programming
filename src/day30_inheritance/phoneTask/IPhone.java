@@ -19,7 +19,7 @@ public class IPhone extends Phone { // IPhone IS A Phone
     }
 
 
-    public static boolean hasApplePay = true;
+    public static boolean hasApplePay = true; // if you want to add this to the toString then you need to override it
     public void faceTime(long phoneNumber){
         System.out.println(getModel() + "facetiming with " + phoneNumber);
     }

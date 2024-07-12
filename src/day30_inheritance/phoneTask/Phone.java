@@ -2,7 +2,7 @@ package day30_inheritance.phoneTask;
 
 import java.util.Arrays;
 
-public class Phone {
+public class Phone { // Parent cannot extend to child (can't be child of child). Or Parent can't inherit from child (e.g. public class Phone extend iPhone/Samsung/Nokia
 
     private String brand;
     private String model;
