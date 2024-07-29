@@ -2,7 +2,7 @@ package day30_inheritance.typesOfInheritance;
 
 import java.time.LocalDateTime;
 
-public class Employee extends Person {
+public class Employee extends Person { // one class can only extend one class in Java (multiple inh is not allowed)
 
     private String employeeID;
     private String jobTitle;
