@@ -1,5 +1,6 @@
 package day30_inheritance.typesOfInheritance;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Employee extends Person { // one class can only extend one class in Java (multiple inh is not allowed)
@@ -11,7 +12,7 @@ public class Employee extends Person { // one class can only extend one class in
     // need to use the generate shortcut to create the constructor as salary has its own items
 
 
-    public Employee(String name, char gender, LocalDateTime DOB, String employeeID, String jobTitle, double salary) {
+    public Employee(String name, char gender, LocalDate DOB, String employeeID, String jobTitle, double salary) {
         super(name, gender, DOB);
         setEmployeeID(employeeID);
         setJobTitle(jobTitle);

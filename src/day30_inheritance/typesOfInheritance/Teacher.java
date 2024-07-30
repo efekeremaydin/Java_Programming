@@ -1,5 +1,6 @@
 package day30_inheritance.typesOfInheritance;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Teacher extends Employee {
@@ -10,7 +11,9 @@ public class Teacher extends Employee {
 
     // person is the parent of employee and employee is the parent of teacher
 
-    public Teacher(String name, char gender, LocalDateTime DOB, String employeeID, String jobTitle, double salary) {
+    // child class gets richer. so Teacher class is the richest. Person class is the poorest, it cannot inh from any of them
+
+    public Teacher(String name, char gender, LocalDate DOB, String employeeID, String jobTitle, double salary) {
         super(name, gender, DOB, employeeID, jobTitle, salary);
     }
 

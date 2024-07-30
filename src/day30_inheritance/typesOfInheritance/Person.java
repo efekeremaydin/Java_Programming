@@ -1,20 +1,20 @@
 package day30_inheritance.typesOfInheritance;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 
 public class Person {
 
     private String name;
     private int age;
     private char gender;
-    private LocalDateTime DOB;
+    private LocalDate DOB;
 
 //    private double salary; should not be added
 //    private String schoolName;
 
 
-    public Person(String name, char gender, LocalDateTime DOB) {
+    public Person(String name, char gender, LocalDate DOB) {
         setName(name);
         setGender(gender);
         setDOB(DOB);
@@ -49,11 +49,11 @@ public class Person {
         this.gender = gender;
     }
 
-    public LocalDateTime getDOB() {
+    public LocalDate getDOB() {
         return DOB;
     }
 
-    public void setDOB(LocalDateTime DOB) {
+    public void setDOB(LocalDate DOB) {
         this.DOB = DOB;
     }
 

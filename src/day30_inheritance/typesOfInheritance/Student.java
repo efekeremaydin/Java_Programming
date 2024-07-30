@@ -1,9 +1,10 @@
 package day30_inheritance.typesOfInheritance;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Student extends Person {
-    public Student(String name, char gender, LocalDateTime DOB, char grade, String studentID) {
+    public Student(String name, char gender, LocalDate DOB, char grade, String studentID) {
         super(name, gender, DOB); // calls parent class const.
         setGrade(grade);
         setStudentID(studentID);
