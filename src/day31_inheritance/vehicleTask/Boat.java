@@ -6,7 +6,7 @@ public class Boat extends Vehicle {
     }
 
     public void sail(){
-        System.out.println();
+        System.out.println(getBrand() + " " + getModel() + " is sailing");
     }
 
 }
