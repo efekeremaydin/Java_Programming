@@ -4,6 +4,8 @@ public class Vehicle { // child can never be parent of the parent
     // parent can never inherit anything from the child.
     // only child inherits from parent
 
+    // this is hierarchical inh
+
     private String brand, model, color;
     private int year;
     private double price;
