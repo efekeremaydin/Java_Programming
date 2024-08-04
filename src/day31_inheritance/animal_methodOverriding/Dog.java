@@ -7,7 +7,7 @@ public class Dog extends Animal{
 
     @Override // less mem usage, more usability of the code
     public void eat() {
-        System.out.println("Dog" + getName() + " is eating dog food");
+        System.out.println("Dog " + getName() + " is eating dog food");
     }
 
     public void bark() {

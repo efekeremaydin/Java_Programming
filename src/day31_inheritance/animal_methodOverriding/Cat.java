@@ -22,19 +22,19 @@ public class Cat extends Animal{
 
         //if you call from cat object it will call this method or else if you call from Animal object it will call that method
 
-        System.out.println("Cat" + getName() + " is eating cat food");
+        System.out.println("Cat " + getName() + " is eating cat food");
 
     }
 
     @Override
     public void sleep() { // we have only one sleep method with diff impl.
         // super.sleep();
-        System.out.println("Cat" + getName() + " sleeps 12 hours in a day");
+        System.out.println("Cat " + getName() + " sleeps 12 hours in a day");
     }
 
     // @Override can't be overridden as it's unique
     public void scratch(){
-        System.out.println("Cat" + getName() + " is scratching");
+        System.out.println("Cat " + getName() + " is scratching");
     }
 }
 
