@@ -4,7 +4,7 @@ public class Shape {
 
     private String name;
 
-    public Shape(String name) {
+    public Shape() {
         setName(getClass().getSimpleName()); // this will get the class name as the name of the shape
     }
 
