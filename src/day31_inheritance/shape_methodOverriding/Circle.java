@@ -48,5 +48,15 @@ public class Circle extends Shape{
                 ", perimeter='" + perimeter() + '\'' +
                 '}';
     }*/
+
+    @Override
+    public String toString() {
+        return  getClass().getSimpleName() + "{" +
+                "name='" + getName() + '\'' +
+                ", radius='" + radius + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
 
