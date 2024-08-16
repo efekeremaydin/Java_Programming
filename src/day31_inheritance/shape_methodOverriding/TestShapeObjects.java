@@ -15,6 +15,17 @@ public class TestShapeObjects {
 
         System.out.println("----");
 
+        Rectangle rectangle = new Rectangle(5,5);
+
+        System.out.println(rectangle);
+        rectangle.draw();
+
+        System.out.println("---");
+
+        Triangle triangle = new Triangle(5,2,3, 3);
+        System.out.println(triangle);
+
+        triangle.draw();
 
 
 
