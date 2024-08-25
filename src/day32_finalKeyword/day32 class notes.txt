@@ -1,0 +1,108 @@
+Java Programming Day32
+
+Topics: Overriding vs Overloading
+
+// overriding is changing body of the method/implementation if different obj
+// in one class you can only have 1 impl.
+// multiple impl possible thru inherit.
+// must happen in subclass
+// if there are 10 subclass you can override 10 times
+// any method can be overloaded, but overriding can't happen if the method is not visible
+// so if the access m is private you can't override.
+// besides the private, if m is static you can't override
+// also any m that has final specifier, you can't override
+// only the inst m can be overridden
+
+// method overload: same class. any method can be overloaded. even const.
+
+// override: return type, method name and parameters must be same
+// access m of the overridden m needs to be same or more visible
+// you can't override the const as it's not inherited
+
+OL:
+// always in the same class
+// parameters must be different
+// any access mod
+// overload any met
+// return type doesnt matter
+
+OR:
+// has to happen in subclass
+// parameters must be same (it doesnt create a new method only impl changes)
+// Access mod cannot be more rest.
+// private and final can't be OR
+// return type must be same
+// body/impl. must be different
+// improves reusability and uses less memory
+
+
+
+		Final Keyword
+
+package name: day32_finalKeyword
+
+Warmup tasks:
+	1. Create a class named Car
+            Variables:
+                make, model, color, year, price, numberOfWheels (static), hasBattery (static)
+
+            Encapsulate all the fields
+                    Condition:
+                        1. year can not be negative or zero
+                        2. price can not be negative or zero
+
+            Add a constructor that can set all the fields
+                    note: make of the car can be set to the class name    
+
+            Methods:
+                start(): "Press the brake and twist the key to ignition"
+
+                toString()
+
+
+	2. Create the following sub classes and override the start() method if needed:
+
+            1. Toyota
+                	start(): "Press the brake and twist the key to ignition"
+
+            2. Honda
+                    start(): "Press the brake and twist the key to ignition"
+
+            3. Audi
+                	start(): "Press the start button"
+
+            4. BMW
+                	start(): "Call the mechanic or jump start "
+
+            5. Tesla
+               		start(): "Say \"Start\""
+
+	                Extra method:
+	                	  autoPilot()
+	                 
+
+	                Extra Conditions for the variables:
+	                    1. Model of tesla can only be set to one of the followings:
+	                        {"Model S", "Model Y", "Model x", "Model 3" };
+	                    2. color of tesla can only be set to one of the followings:
+	                        {"White", "Red", "Black", "Silver", "Blue", "Brown", "Green"}
+	                    3. year of the tesla can not be less than 2008
+	                    4. price of tesla can not be less than 50k
+
+
+ 							 
+
+
+
+IF the instance variable is final, we can only getter, we can not generate setter for it
+
+
+
+
+
+
+
+
+
+
+
