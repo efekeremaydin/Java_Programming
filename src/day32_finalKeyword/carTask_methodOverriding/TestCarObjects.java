@@ -1,4 +1,4 @@
-package day32_finalKeyword.carTask_overriding;
+package day32_finalKeyword.carTask_methodOverriding;
 
 public class TestCarObjects {
 
@@ -21,9 +21,9 @@ public class TestCarObjects {
         car4.start();
         System.out.println(car4);
 
-        Tesla car5 = new Tesla("Model A", "White", 2010, 112323);
-        //car5.start();
-        //System.out.println(car5);
+        Tesla car5 = new Tesla("Model S", "White", 2010, 112323);
+        car5.start();
+        System.out.println(car5);
 
 
     }

@@ -1,4 +1,4 @@
-package day32_finalKeyword.carTask_overriding;
+package day32_finalKeyword.carTask_methodOverriding;
 
 public class Tesla extends Car{
 
@@ -34,7 +34,7 @@ public class Tesla extends Car{
     }
 
     @Override
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         if (price < 50000){
             System.err.println("Invalid");
             System.exit(1);

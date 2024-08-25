@@ -1,4 +1,4 @@
-package day32_finalKeyword.carTask_overriding;
+package day32_finalKeyword.carTask_methodOverriding;
 
 public class BMW extends Car{
     public BMW(String model, String color, int year, int price) {

@@ -1,19 +1,27 @@
-package day32_finalKeyword.carTask_overriding;
+package day32_finalKeyword.carTask_methodOverriding;
 
 public class Car {
 
     private String make, model, color;
     private int year;
-    private int price;
-    private static int numberOfWheels;
-    private static boolean hasBattery = true;
+    private double price;
+    //private static int numberOfWheels;
+    // no need to encapsulate the static vars as it's public to everyone
+    public static int numberOfWheels;
+    //private static boolean hasBattery = true;
+    public static boolean hasBattery;
 
     public Car(String model, String color, int year, int price) {
-        setMake(getClass().getSimpleName());
+        setMake(getClass().getSimpleName()); // setting the class name to the make of the car
         setModel(model);
         setColor(color);
         setYear(year);
         setPrice(price);
+    }
+
+    static { // it's better to init statics from here as it will only be initialized 1 time, so no need to add to the const
+        hasBattery = true;
+        numberOfWheels = 4;
     }
 
 
@@ -46,11 +54,12 @@ public class Car {
     }
 
     public void setYear(int year) {
-        if (year <= 0) {
-            System.err.println("year can not be negative or zero");
-            System.exit(1);
+        if (year <= 0) { // if specified year us neg or zero
+            System.err.println("year can not be negative or zero " + year);
+            System.exit(1); // terminates the programme
         }
-        this.year = year;
+        this.year = year; // if above is true then this won't be set
+        // in order for this inst var to be set above cond needs to be false
     }
 
     public static int getNumberOfWheels() {
@@ -61,40 +70,39 @@ public class Car {
         Car.numberOfWheels = numberOfWheels;
     }
 
-    public static boolean isHasBattery() {
-        return hasBattery;
-    }
+//    public static boolean isHasBattery() {
+//        return hasBattery;
+//    }
 
-    public static void setHasBattery(boolean hasBattery) {
-        Car.hasBattery = hasBattery;
-    }
+//    public static void setHasBattery(boolean hasBattery) {
+//        Car.hasBattery = hasBattery;
+//    }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        if (year <= 0) {
-            System.err.println("price can not be negative or zero");
-            System.exit(1);
-            this.price = price;
+    public void setPrice(double price) {
+        if (price <= 0) { // if specified price is neg or zero
+            System.err.println("price can not be negative or zero" + price);
+            System.exit(1);  // terminates the programme
         }
-        this.price = price;
+        this.price = price; // if the above is true then this inst var won't be set, otherwise it will be set
     }
 
     public void start() {
-        System.out.println("Press the brake and twist the key to ignition");
+        System.out.println("Press the brake and twist the key to ignition to start  " + make + " " + model);
     }
 
 
     @Override
     public String toString() {
-        return getClass().getSimpleName()+ "{" +
-                "make='" + make + '\'' +
+        return make + "{" +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price=" + price +
+                ", wheels=" + numberOfWheels +
                 '}';
     }
 }
