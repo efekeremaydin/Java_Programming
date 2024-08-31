@@ -11,12 +11,16 @@ public class Car {
     //private static boolean hasBattery = true;
     public static boolean hasBattery;
 
-    public Car(String model, String color, int year, int price) {
-        setMake(getClass().getSimpleName()); // setting the class name to the make of the car
+    public Car(String model, String color, int year, double price) {
+        setMake(getClass().getSimpleName()); // setting the class name to the make of the car. so that when we create the obj less arg we need to provide
         setModel(model);
         setColor(color);
         setYear(year);
         setPrice(price);
+
+        // explanation below:
+//        hasBattery = true;
+//        numberOfWheels = 4;
     }
 
     static { // it's better to init statics from here as it will only be initialized 1 time, so no need to add to the const
@@ -97,7 +101,8 @@ public class Car {
 
     @Override
     public String toString() {
-        return make + "{" +
+        return make + "{" + // you can directly add make as it's getting the class name in the const.
+                //", make='" + model + '\'' + // you don't need it as it's already above
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
