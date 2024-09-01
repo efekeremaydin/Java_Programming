@@ -7,8 +7,22 @@ public class Toyota extends Car {
         super(model, color, year, price);
     }
 
-    @Override
-    public void start() {
-        super.start();
-    }
+    // no need to override as it's the same impl.
+
+//    @Override
+//    public void start() {
+//        super.start();
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

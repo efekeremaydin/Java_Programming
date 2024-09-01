@@ -7,6 +7,6 @@ public class BMW extends Car{
 
     @Override
     public void start() {
-        System.out.println("Call the mechanic or jump start");
+        System.out.println("Call the mechanic or jump start " + getMake() + " " + getModel());
     }
 }
