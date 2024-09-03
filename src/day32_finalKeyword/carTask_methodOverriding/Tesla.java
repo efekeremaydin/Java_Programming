@@ -1,5 +1,7 @@
 package day32_finalKeyword.carTask_methodOverriding;
 
+import java.util.Arrays;
+
 public class Tesla extends Car{
 
     public Tesla(String model, String color, int year, int price) {
@@ -8,20 +10,36 @@ public class Tesla extends Car{
 
     @Override
     public void setModel(String model) {
-        if (!model.equals("Model S") || !model.equals("Model Y") || !model.equals("Model X") || !model.equals("Model 3")) {
-            System.err.println("Invalid");
+//        if (!model.equals("Model S") || !model.equals("Model Y") || !model.equals("Model X") || !model.equals("Model 3")) {
+//            System.err.println("Invalid");
+//            System.exit(1);
+//        }
+//        super.setModel(model);
+
+        String[] models = {"Model S", "Model Y", "Model x", "Model 3" };
+        if (!Arrays.asList(models).contains(model)) {
+            System.err.println("Invalid Tesla Model: " +model);
             System.exit(1);
         }
-        super.setModel(model);
+        super.setModel(model); // this.model = model;
     }
 
     @Override
     public void setColor(String color) {
-        if (!color.equals("White") || !color.equals("Red") || !color.equals("Black") || !color.equals("Silver") || !color.equals("Blue") || !color.equals("Brown") || !color.equals("Green")) {
-            System.err.println("Invalid");
-            System.exit(1);
-        }
-        super.setColor(color);
+
+//        if (!color.equals("White") || !color.equals("Red") || !color.equals("Black") || !color.equals("Silver") || !color.equals("Blue") || !color.equals("Brown") || !color.equals("Green")) {
+//            System.err.println("Invalid");
+//            System.exit(1);
+//        }
+//        super.setColor(color);
+
+            String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange", "White"};
+
+            if (!Arrays.asList(colors).contains(color)){
+                System.err.println("Invalid");
+                System.exit(1);
+            }
+            super.setColor(color);
     }
 
     @Override
@@ -44,11 +62,11 @@ public class Tesla extends Car{
 
     @Override
     public void start() {
-        System.out.println("Say \"Start\"");
+        System.out.println("Say \"Start\" to start " + getMake() + " " + getModel());
     }
 
     public void autoPilot() {
-        System.out.println("Started AutoPilot");
+        System.out.println(getMake()+ " "+ getModel() + " " + "is in self-driving mode");
     }
 }
 

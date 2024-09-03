@@ -25,6 +25,8 @@ public class TestCarObjects {
         car5.start();
         System.out.println(car5);
 
+//        Tesla car6 = new Tesla("Model S", "White", 2010, 1);
+
 
     }
 }
