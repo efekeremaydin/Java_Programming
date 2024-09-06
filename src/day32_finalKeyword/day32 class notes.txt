@@ -36,6 +36,21 @@ OR:
 // improves reusability and uses less memory
 
 
+// FINAL KEYWORD
+used to rest. users
+class, var or method
+makes them immutable
+can't be applied to const and abst meth and abst class
+
+var -> stop value chang
+met -> prevent m overr.
+class -> prevent inheritance
+
+var
+Var becomes constant
+value can't be modified
+can't be reassigned
+
 
 		Final Keyword
 

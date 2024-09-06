@@ -1,6 +1,6 @@
 package day31_inheritance.shape_methodOverriding;
 
-public class Circle extends Shape{
+public final class Circle extends Shape{
 
 
     public Circle(double radius) {

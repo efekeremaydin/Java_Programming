@@ -70,7 +70,7 @@ public class Tesla extends Car{
         System.out.println("Say \"Start\" to start " + getMake() + " " + getModel());
     }
 
-    public void autoPilot() {
+    public final void autoPilot() {
         System.out.println(getMake()+ " "+ getModel() + " " + "is in self-driving mode");
     }
 }
