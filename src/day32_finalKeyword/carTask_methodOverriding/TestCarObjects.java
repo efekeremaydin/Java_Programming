@@ -27,6 +27,16 @@ public class TestCarObjects {
 
 //        Tesla car6 = new Tesla("Model S", "White", 2010, 1);
 
+        System.out.println("---");
+       // car5.setPrice(30000);
+        // car5.setModel("Model H");
+
+
+
+
+
+
+
 
     }
 }
