@@ -103,13 +103,15 @@ public class Car {
     public String toString() {
         return make + "{" + // you can directly add make as it's getting the class name in the const.
                 //", make='" + model + '\'' + // you don't need it as it's already above
-                ", model='" + model + '\'' +
+                "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + year +
                 ", price=" + price +
                 ", wheels=" + numberOfWheels +
                 '}';
     }
+
+
 }
 
 /*

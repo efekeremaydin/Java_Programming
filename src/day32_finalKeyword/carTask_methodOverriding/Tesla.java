@@ -1,5 +1,6 @@
 package day32_finalKeyword.carTask_methodOverriding;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Tesla extends Car{
@@ -16,8 +17,10 @@ public class Tesla extends Car{
 //        }
 //        super.setModel(model);
 
-        String[] models = {"Model S", "Model Y", "Model x", "Model 3" };
-        if (!Arrays.asList(models).contains(model)) {
+        ArrayList<String> models = new ArrayList<>();
+        models.addAll(Arrays.asList("Model S", "Model Y", "Model x", "Model 3" ));
+       // String[] models = {"Model S", "Model Y", "Model x", "Model 3" };
+        if (!models.contains(model)) {
             System.err.println("Invalid Tesla Model: " +model);
             System.exit(1);
         }
@@ -33,19 +36,21 @@ public class Tesla extends Car{
 //        }
 //        super.setColor(color);
 
-            String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange", "White"};
+            ArrayList<String> colors = new ArrayList<>();
+            colors.addAll(Arrays.asList("Red", "Green", "Blue", "Yellow", "Orange", "White"));
+            //String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange", "White"};
 
-            if (!Arrays.asList(colors).contains(color)){
-                System.err.println("Invalid");
+            if (!colors.contains(color)){
+                System.err.println("Invalid Tesla color " + color);
                 System.exit(1);
             }
-            super.setColor(color);
+            super.setColor(color); // this.color = color;
     }
 
     @Override
     public void setYear(int year) {
         if (year < 2008){
-            System.err.println("Invalid");
+            System.err.println("Invalid year of Tesla car " + year);
             System.exit(1);
         }
         super.setYear(year);
@@ -54,7 +59,7 @@ public class Tesla extends Car{
     @Override
     public void setPrice(double price) {
         if (price < 50000){
-            System.err.println("Invalid");
+            System.err.println("Invalid price for Tesla car " + price);
             System.exit(1);
         }
         super.setPrice(price);
