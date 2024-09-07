@@ -31,7 +31,7 @@ public class Developer extends Employee{
                 ", age=" + getAge() +
                 ", dateOfBirth=" + getDateOfBirth() +
                 ", jobTitle='" + getJobTitle() + '\'' +
-                ", salary=" + getJobTitle() +
+                ", salary=" + getSalary() +
                 ", programmingLanguage='" + programmingLanguage + '\'' +
                 '}';
     }

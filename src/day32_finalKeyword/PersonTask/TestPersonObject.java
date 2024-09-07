@@ -23,8 +23,12 @@ public class TestPersonObject {
 
         System.out.println(student);
 
-        Developer developer = new Developer("E", 'M', LocalDate.of(1988, 10,18), "Senior Software Engineer", 10000000, "Java");
+        Developer developer = new Developer("E", 'M', LocalDate.of(1988, 10,18), "Senior Software Engineer", 1000000, "Java");
         System.out.println(developer);
+
+        Tester tester = new Tester("H", 'F', LocalDate.of(1990, 1,1), "SDET", 123123, "Selenium");
+
+        System.out.println(tester);
 
 
 

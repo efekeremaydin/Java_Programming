@@ -5,12 +5,12 @@ import java.time.LocalDate;
 public class Employee extends Person { // this also should not be final as it may need to be inherited
 
     private String jobTitle;
-    private double salary;
+    private float salary;
 
     public Employee(String name, char gender, LocalDate dateOfBirth, String jobTitle, double salary) {
         super(name, gender, dateOfBirth);
         setJobTitle(jobTitle);
-        setSalary(salary);
+        setSalary((float) salary);
     }
 
     public String getJobTitle() {
@@ -21,11 +21,11 @@ public class Employee extends Person { // this also should not be final as it ma
         this.jobTitle = jobTitle;
     }
 
-    public double getSalary() {
+    public float getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(float salary) {
         this.salary = salary;
     }
 
