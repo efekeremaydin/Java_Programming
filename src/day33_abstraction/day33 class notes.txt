@@ -48,6 +48,14 @@ public abstract double area();
 - does not have a body
 - can only be created in an abs class or in an interface
 
+ABS Class
+- meant to be super class
+- goal is to provide reusable vars and m to sub classes
+- abstract keyword is used to create
+- abs class can't be instantiated
+
+public abstract class Animal{}
+
 OOP Abstractrion:
 		1. abstrct method
 		2. abstract class
