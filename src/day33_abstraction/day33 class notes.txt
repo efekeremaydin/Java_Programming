@@ -21,6 +21,19 @@ Warmup tasks:
 			Override the toString Method and include the id, batchName, batchNumber variables
 
 
+// ABS
+Abs and pm nly possible if there's inheritance
+Abs is simply ignoring the details and focusing only relevant properties of the problem
+Details must be done by the sub classes
+
+***
+- Process of hiding impl from the user
+- Only the funct will be provided to user
+- Focus on essentials, ignore irrelevant and unimportant
+- User will have info on what the object does instead of how
+***
+
+- just focus on the creation of the method rather than details of impl.
 
 OOP Abstractrion:
 		1. abstrct method
@@ -35,7 +48,7 @@ OOP Abstractrion:
 
 methods:
 	
-	public static void methodName(Paremeters) { }
+	public static void methodName(Paremeters) { normally you need to provide the body otherwise you will get compiler error }
 
 
 
