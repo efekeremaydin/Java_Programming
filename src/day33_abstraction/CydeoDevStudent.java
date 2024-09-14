@@ -4,12 +4,13 @@ import day32_finalKeyword.PersonTask.Person;
 
 import java.time.LocalDate;
 
-public final class CydeoDevStudent extends Person {
+public final class CydeoDevStudent extends Person { // this class can't be inherited now
 
-    private final int id;
-    private String batchName;
-    private int batchNumber;
-    private final static String programmingLanguage;
+    private final int id; // final is to make it unchangeable
+    // any var that is final needs to be inst before using them
+    private String batchName; // this should not be final as it needs to change
+    private int batchNumber; // this should not be final as it needs to change
+    public final static String programmingLanguage;
 
     static {
         programmingLanguage = "Java";
@@ -18,7 +19,16 @@ public final class CydeoDevStudent extends Person {
 
 
     public CydeoDevStudent(String name, char gender, LocalDate dateOfBirth, int id, String batchName, int batchNumber) {
-        super(name, gender, dateOfBirth);
+        super(name, gender, dateOfBirth); // below cond can only be given after the age is set
+        // since age has not setter (it's final) cond can only be given in the const. otherwise if you have a setter you should always provide cond via setter
+        if (getAge()<18){ // if the age is set to less than 18
+            System.err.println("Invalid age: " + getAge());
+            System.exit(1);
+        }
+        /*if (LocalDate.now().getYear()-dateOfBirth.getYear()<18) {
+            System.err.println("Invalid age: " + getAge());
+            System.exit(1);
+        }*/
         this.id = id;
         setBatchName(batchName);
         setBatchNumber(batchNumber);
@@ -33,11 +43,17 @@ public final class CydeoDevStudent extends Person {
     }
 
     public void setBatchName(String batchName) {
-        if (!(batchName.equals("Zero to Hero") || batchName.equals("Alumni Dev"))) {
-            System.err.println("Invalid batch name" +batchName);
+        if (batchName.equalsIgnoreCase("zero to hero") || batchName.equalsIgnoreCase("alumni dev")) {
+            this.batchName = batchName;
+        }else{ // otherwise: if the batch name is invalid
+            System.err.println("Invalid batch name: " + batchName + "\n No such a batch in Cydeo");
             System.exit(1);
         }
-        this.batchName = batchName;
+      /*  if (!(batchName.equalsIgnoreCase("zero to hero") || batchName.equalsIgnoreCase("alumni dev"))) {
+            System.err.println("Invalid batch name: " +batchName);
+            System.exit(1);
+        }else{
+        this.batchName = batchName;*/
     }
 
     public int getBatchNumber() {
@@ -45,11 +61,19 @@ public final class CydeoDevStudent extends Person {
     }
 
     public void setBatchNumber(int batchNumber) {
+        /*if (batchNumber>0){
+            this.batchNumber = batchNumber;
+        }else{
+            System.err.println("Invalid batch number: " + batchNumber);
+        }*/
+
         if(batchNumber <= 0) {
-            System.err.println("Invalid batch number" + batchNumber);
+            System.err.println("Invalid batch number: " + batchNumber + "\nBatch number cannot be negative or zero");
             System.exit(1);
+        }else{
+            this.batchNumber = batchNumber;
         }
-        this.batchNumber = batchNumber;
+
     }
 
    /* @Override
@@ -74,23 +98,30 @@ public final class CydeoDevStudent extends Person {
     }
 
     @Override
+    public void sleep() {
+        System.out.println(getName() + " dreaming of " + programmingLanguage + " while speelping");
+    }
+
+    @Override
     public String toString() {
         return "CydeoDevStudent{" +
                 "name='" + getName() + '\'' +
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
                 ", dateOfBirth=" + getDateOfBirth() +
-                "id=" + id +
+                ", id=" + id +
                 ", batchName='" + batchName + '\'' +
                 ", batchNumber=" + batchNumber +
                 '}';
     }
 
-    @Override
+  /*  @Override
     public LocalDate getDateOfBirth() {
-        if (getDateOfBirth().getYear() >)
+        if (LocalDate.now().getYear() - getDateOfBirth().getYear() < 18){
+            System.err.println("Invalid age" + getAge());
+        }
         return super.getDateOfBirth();
-    }
+    }*/
 }
 
 /*
