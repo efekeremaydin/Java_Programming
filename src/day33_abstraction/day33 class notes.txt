@@ -35,6 +35,19 @@ Details must be done by the sub classes
 
 - just focus on the creation of the method rather than details of impl.
 
+*Abs M
+- no body, only signature
+- m that's meant to be overr.
+- abstract keyword is used to create abs m
+
+public abstract void eat(); // m w/out body so needs to be overr. in the subclasses. diff impl is resp of child classes.
+public abstract double area();
+
+*RULES
+- needs to adhere to overr. rules (static final private can never be abs)
+- does not have a body
+- can only be created in an abs class or in an interface
+
 OOP Abstractrion:
 		1. abstrct method
 		2. abstract class
@@ -60,10 +73,10 @@ employeeTask
 			name, age, gender, id, jobTitle, salary ....
 
 		Methods:
-		  abstract work();
+		  abstract work(); // incompl met
 
     Teacher:
-    	work(){ teaching }
+    	work(){ teaching } // child resp to compl
 
 
 	Developer:
