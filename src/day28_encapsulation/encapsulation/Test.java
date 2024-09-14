@@ -15,11 +15,11 @@ public class Test {
 
         student1.setAge2(25);
         System.out.println(student1.getAge2());
-        System.out.println("Test Completed");
+        System.out.println("TestCydeoDevObject Completed");
 
         //student1.setName("Aaron123");
         System.out.println(student1.getName());
-        System.out.println("Test Completed");
+        System.out.println("TestCydeoDevObject Completed");
         // student1.name = "Aaron";
 
 

@@ -29,7 +29,7 @@ public final class CydeoDevStudent extends Person { // this class can't be inher
             System.err.println("Invalid age: " + getAge());
             System.exit(1);
         }*/
-        this.id = id;
+        this.id = id; // this is how you init. the final id var in c
         setBatchName(batchName);
         setBatchNumber(batchNumber);
     }
@@ -102,10 +102,12 @@ public final class CydeoDevStudent extends Person { // this class can't be inher
         System.out.println(getName() + " dreaming of " + programmingLanguage + " while speelping");
     }
 
+    // breathe can't be overr. as it's final in the Person class
+
     @Override
     public String toString() {
         return "CydeoDevStudent{" +
-                "name='" + getName() + '\'' +
+                "name='" + getName() + '\'' + // we have to use getName() method etc as the vars are private
                 ", gender=" + getGender() +
                 ", age=" + getAge() +
                 ", dateOfBirth=" + getDateOfBirth() +

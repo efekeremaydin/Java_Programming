@@ -6,12 +6,12 @@ public class CustomMethodIntro {
 
         // this is building method. if i want to create own method, you can't create in side. it can't be in the same curly braces. you can't create outside of class too.
 
-        System.out.println("Test started");
+        System.out.println("TestCydeoDevObject started");
 
         greetings();
         helloWorld();
 
-        System.out.println("Test completed");
+        System.out.println("TestCydeoDevObject completed");
 
 
     }
