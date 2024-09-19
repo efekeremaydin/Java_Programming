@@ -2,6 +2,7 @@ package day33_abstraction.employeeTask;
 
 public abstract class Employee { // only used for providing vars and m
     // can't be final as this is meant to be inherited
+    // if this was a regular class you won't be able to create methods without the body
 
     private String name;
     private int age;
@@ -69,8 +70,20 @@ public abstract class Employee { // only used for providing vars and m
 
     //public void work(); need to add abstract
     public abstract void work(); // class need s to be abs as well
+    // abs m (incompl. m)
 
 
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "{"+
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", id='" + id + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
 /*
