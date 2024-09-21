@@ -29,7 +29,7 @@ public final class Circle extends Shape{
 
     @Override
     public void draw() {
-        super.draw();
+        //super.draw();
 
         // code fragments that can draw the circle
 

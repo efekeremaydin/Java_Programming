@@ -69,6 +69,22 @@ OOP Abstractrion:
 IMP
 Parent class' abstract methods must be overriden in child (non-abstract) class
 
+Creating Obj:
+- Abs class meant to be inherited only, not to be instantiated
+- Abs class is not concrete, obj has to be concrete
+- sub class of abs class is concrete and can be inst.
+- conc class MUST implement all the inherited abs m.
+
+Comparison
+Regular Class & Abs Class => both can have const. instances and statics
+RC can be instantiated, AC can't
+RC can't have abs m, AC can
+RC can be final, AC can't
+
+
+
+
+
 
 
 methods:

@@ -58,7 +58,7 @@ public class Triangle extends Shape {
 
     @Override
     public void draw() {
-        super.draw();
+        //super.draw();
         System.out.println("   *");
         System.out.println("  * *");
         System.out.println(" *   *");

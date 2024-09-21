@@ -11,26 +11,17 @@ public class Dog extends Animal{
     }
 
     public void bark() {
-        System.out.println("Dog" + getName() + " is barking");
+        System.out.println("Dog " + getName() + " is barking");
     }
 
+    public void sleep() {
+        System.out.println("Dog " + getName() + " is sleeping");
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public void drink() {
+        System.out.println("Dog " + getName() + " is drinking water");
+    }
 }
 
 

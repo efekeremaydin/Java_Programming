@@ -32,6 +32,11 @@ public class Cat extends Animal{
         System.out.println("Cat " + getName() + " sleeps 12 hours in a day");
     }
 
+    @Override
+    public void drink() {
+        System.out.println("Cat " + getName() + " is a drinking milk");
+    }
+
     // @Override can't be overridden as it's unique
     public void scratch(){
         System.out.println("Cat " + getName() + " is scratching");

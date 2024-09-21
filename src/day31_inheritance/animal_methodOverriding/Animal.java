@@ -1,6 +1,6 @@
 package day31_inheritance.animal_methodOverriding;
 
-public class Animal {
+public abstract class Animal {
 
     private String name, breed;
     private char gender;
@@ -48,17 +48,17 @@ public class Animal {
         this.age = age;
     }
 
-    public void drink(){
-        System.out.println(name + " is drinking water");
-    }
+    public abstract void drink();
+        //System.out.println(name + " is drinking water");
 
-    public void eat(){
-        System.out.println(name + " is eating");
-    }
 
-    public void sleep(){
-        System.out.println(name+ " sleeps 8 hours");
-    }
+    public abstract void eat();
+        //System.out.println(name + " is eating");
+
+
+    public abstract void sleep();
+        //System.out.println(name+ " sleeps 8 hours");
+
 
 
     public String toString() {

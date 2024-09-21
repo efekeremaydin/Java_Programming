@@ -28,7 +28,7 @@ public class Rectangle extends Shape {
 
     @Override
     public void draw() {
-        super.draw();
+        //super.draw();
         System.out.println("\t* * * * * * * * * * *");
         for (int i = 0; i < 4; i++) {
             System.out.println("\t*                   *");

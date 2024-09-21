@@ -28,6 +28,15 @@ public class Lion extends Animal {
         System.out.println("Lion " + getName() + " is roaring");
     }
 
+    @Override
+    public void drink() {
+        System.out.println("Lion "+ getName() + " is drinking milk");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Lion " +getName() + " is sleeping in the cave");
+    }
 
     @Override
     public String toString() {

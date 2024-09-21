@@ -29,7 +29,7 @@ public class Square extends Shape {
     @Override
     public void draw() {
         //System.out.println("Drawing square");
-        super.draw();
+        //super.draw();
         System.out.println("\t* * * * * *");
         for (int i = 0; i < 4; i++) {
             System.out.println("\t*         *");

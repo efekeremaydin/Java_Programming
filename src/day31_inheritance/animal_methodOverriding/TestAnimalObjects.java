@@ -34,6 +34,13 @@ public class TestAnimalObjects {
         lion.sleep();
         eagle.sleep();
 
+        System.out.println("-------");
+
+        cat.drink();
+        dog.drink();
+        lion.drink();
+        eagle.drink();
+
 
 
 

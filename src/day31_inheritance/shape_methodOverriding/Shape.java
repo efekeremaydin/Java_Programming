@@ -1,6 +1,6 @@
 package day31_inheritance.shape_methodOverriding;
 
-public class Shape {
+public abstract class Shape {
 
     private String name;
 
@@ -17,17 +17,23 @@ public class Shape {
     }
 
 
-    public double area(){
+    /*public double area(){
         return 0; // every area formula is diff so we can set to 0 here, as it will be overridden
-    }
+    }*/
 
-    public double perimeter(){
+    public abstract double area();
+
+
+    /*public double perimeter(){
         return 0;
-    }
+    }*/
+    public abstract double perimeter();
 
-    public void draw(){
+
+    /*public void draw(){
         System.out.println("Drawing a " + getClass().getSimpleName() + ": ");
-    }
+    }*/
+    public abstract void draw();
 
     @Override
     public String toString() {
