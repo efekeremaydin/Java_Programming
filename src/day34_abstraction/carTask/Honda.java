@@ -5,8 +5,8 @@ public class Honda extends Car {
         super(model, color, year, price);
     }
 
-    @Override
-    public void start() {
-        System.out.println("Honda is running");
+    @Override // annotation is opt.
+    public void start() { // same or more visible access mod
+        System.out.println("Twist the key to ignition to start " + getMake() + " " + getModel());
     }
 }
