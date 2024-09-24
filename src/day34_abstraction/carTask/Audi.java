@@ -12,6 +12,6 @@ public class Audi extends Car{
     }
 
     public void autoPark(){ // this can't be private as then we can't use outside the class
-        System.out.println(getMake() + " " + getModel() + "" + "has auto park feature");
+        System.out.println(getMake() + " " + getModel() + " " + "has auto park feature");
     }
 }

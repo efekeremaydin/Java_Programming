@@ -37,6 +37,26 @@ warmup tasks:
 					extra methods:
 						autoPilot()
 
+INTERFACE
+- 2nd way of achieving abs
+- 1st way is thru abs m in which you can hide the impl
+- abs m can be created in abs class or in an interface
+- abs class is used when abs class needs to be a parent of all sub classes to define vars and ms
+    - disadv of parent class: subclasses need to inherit everything that parent class has. that's why only the common var and m are declared
+    - if 30% of the features are common in child classes, even then you can't add that to the parent class. that why in these scenarios we need to apply multiple inheritance:
+        - one class can only extend one class
+        - that's why to fill that gap there's interface. one class can inherit from multiple interfaces.
+INTERFACE
+- blueprint of a class (and class is a blueprint of an object)
+- interface is the keyword
+- with interface we have the ability to declare additional methods that classes need
+- not all the methods can be inherited from parent, some methods should be inherited from interface
+- interface is used to achieve 100% abs
+- interface acts as a CONTRACT (Parrot and Eagle have contract with Flyable. Dog and Cat don't need that contract)
+- Airplane is not a subclass of animal but still can use flyable
+
+
+
 
 Animal task:
 	interface Swimmable
