@@ -55,6 +55,8 @@ INTERFACE
 - interface acts as a CONTRACT (Parrot and Eagle have contract with Flyable. Dog and Cat don't need that contract)
 - Airplane is not a subclass of animal but still can use flyable
 
+- One class can only extend to another class but can implement multiple interfaces
+
 
 
 
