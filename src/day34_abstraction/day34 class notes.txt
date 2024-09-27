@@ -56,6 +56,34 @@ INTERFACE
 - Airplane is not a subclass of animal but still can use flyable
 
 - One class can only extend to another class but can implement multiple interfaces
+- Interface accepts multiple inheritance
+- ONLY way to achieve multiple inheritance is through interface
+- Interface provides additional methods
+- Creating m one time is better, as it increases reusability
+
+Properties of INTERFACE
+- it's not a class, so you can't have any instances as instances belong to the obj and objs come from class
+- for var, we can only have static vars, by default these vars declared as final
+- interface can have static, abs and default m, so it can't have any instance method (before java 8 there was only abs m in interface, after java 8 static and def m added)
+    - def m can be treated as an inst m once inherited
+- public is the only access m. and given by default
+    - after java 9 private was also added (only if static m)
+    - so encapsulation is not possible
+    - so we still need abs class
+- abs keyword is given by default
+- var: static & final only
+- m: static abs and def methods only
+
+What interface CANNOT have?
+- inst var
+- inst m
+- const. (const is used to create obj, since obj can't be created from interface, there can't be const in the interface)
+- init. blocks
+- obj
+
+THAT'S WHY WE STILL NEED THE ABS CLASS
+
+
 
 
 
