@@ -83,7 +83,12 @@ What interface CANNOT have?
 
 THAT'S WHY WE STILL NEED THE ABS CLASS
 
-
+To Implement
+- implements keyword
+- multiple inheritance allowed
+- class is responsible for overriding all the abs methods from that interface
+- extend keyword should be used first
+-
 
 
 
