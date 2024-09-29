@@ -88,7 +88,8 @@ To Implement
 - multiple inheritance allowed
 - class is responsible for overriding all the abs methods from that interface
 - extend keyword should be used first
--
+- when you impl from interface vars will be static and final by default as they need to be same in all inherited classes
+    - ms are abs and public by default
 
 
 
@@ -141,7 +142,7 @@ Animal task:
 
 
 
-Person implement Swimmable, Playable
+Person implement Swimmable, Playable // you dont have to have IS A relationship with the animal
 
 Boat implement Swimmable
 
