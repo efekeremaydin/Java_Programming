@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Dog extends Animal implements Playable{
+public class Dog extends Animal implements Playable, Swimmable{
     // when first implementing Playable it will give ce cuz non-abs class can't have abs m as is
     // every m here should have a body
 
@@ -31,6 +31,11 @@ public class Dog extends Animal implements Playable{
     @Override
     public void play() {
         System.out.printf("Dog " + getName() + " is playing with its owner");
+
+    }
+
+    @Override
+    public void swim() {
 
     }
 }

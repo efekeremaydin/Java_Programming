@@ -91,7 +91,10 @@ To Implement
 - when you impl from interface vars will be static and final by default as they need to be same in all inherited classes
     - ms are abs and public by default
 
-
+NEXT
+- two types of interface, funct and non-funct.
+- non-funct. => inheritence purposes
+- funct. => Lambda expressions
 
 
 Animal task:
