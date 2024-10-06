@@ -103,7 +103,7 @@ warmup tasks:
 						autoPark()
 			3. Tesla
 					extra methods:
-						autoPilot()
+						selfDrive()
 
  */
 

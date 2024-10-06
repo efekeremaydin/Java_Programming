@@ -151,7 +151,7 @@ public class Car {
                		start(): "Say \"Start\""
 
 	                Extra method:
-	                	  autoPilot()
+	                	  selfDrive()
 
 
 	                Extra Conditions for the variables:
