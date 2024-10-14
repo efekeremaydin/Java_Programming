@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Duck extends Animal implements Playable, Flyable{ // so these classes they can't inherit from another class but they can inherit from interfaces
+public class Duck extends Animal implements Playable, Flyable, Swimmable{ // so these classes they can't inherit from another class but they can inherit from interfaces
     public Duck(String name, String breed, char gender, int age, String size, String color) {
         super(name, breed, gender, age, size, color);
     }
@@ -30,5 +30,10 @@ public class Duck extends Animal implements Playable, Flyable{ // so these class
     @Override
     public void fly() {
         System.out.println("Duck " + getName() + " is flying");
+    }
+
+    @Override
+    public void swim() {
+
     }
 }

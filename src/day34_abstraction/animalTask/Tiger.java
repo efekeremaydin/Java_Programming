@@ -13,7 +13,7 @@ public class Tiger extends Animal implements WildAnimal {
 
     @Override
     public void eat() {
-        System.out.printf("Tiger " + getName()+ " is eating deer");
+        System.out.println("Tiger " + getName()+ " is eating deer");
 
     }
 

@@ -117,6 +117,26 @@ extends vs implements:
 				// Functional interfaces is for Lambda expressions. Interfaces we use here is for non-funct only
 
 
+// POLYMORPHISM (MANY FORMS)
+Ability of one object to exist in multiple forms
+So animal object can be dog and person object can be delivery man
+creator of a game/show to also be the player, host, other characters etc (squid game)
+pre-cond is IS-A relationship
+parent class/interface, object are concrete subclasses
+parent has the ability of taking form of child class object (even though it's an abstract parent)
+    Animal animal1 = new Dog(); as long as Dog is extending Animal class
+    Flyable animal4 = new Eagle(); as long as Eagle is implementing Flyable interface
+
+Adv
+
+//PM RULES
+Parent ref to the child obj
+In order to determine the class of an obj we use instanceof keyword
+Parent as ref obj can be any child class - this will be handy when we do the projects
+Inheritance is the pre-condition
+You can only call m and var from the ref type (this can be a disadv. For example you can't call bark m from Dog class if you PM Animal to Dog class. And for this we have REFERENCE TYPE CASTINGS)
+Obj type will determine which impl of m will be executed (whether it's an overr m or not)
+
 Task:
 	 Employee[] employees = {
                 new Tester("Hamza", 32, 'M', "A01", "QA", 110000),

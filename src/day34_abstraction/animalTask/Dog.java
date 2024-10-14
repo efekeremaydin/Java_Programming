@@ -38,4 +38,8 @@ public class Dog extends Animal implements Playable, Swimmable{
     public void swim() {
 
     }
+
+    public void bark(){
+        System.out.println("Dog " + getName() + " is barking");
+    }
 }
