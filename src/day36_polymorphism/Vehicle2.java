@@ -1,16 +1,11 @@
-package day31_inheritance.vehicleTask;
+package day36_polymorphism;
 
-public class Vehicle { // child can never be parent of the parent
-    // parent can never inherit anything from the child.
-    // only child inherits from parent
-
-    // this is hierarchical inh
-
+public class Vehicle2 {
     private String brand, model, color;
     private int year;
     private double price;
 
-    public Vehicle(String brand, String model, String color, int year, double price) {
+    public Vehicle2(String brand, String model, String color, int year, double price) {
         setBrand(brand);
         setModel(model);
         setColor(color);
@@ -67,40 +62,5 @@ public class Vehicle { // child can never be parent of the parent
                 ", price=" + price +
                 '}';
     }
+
 }
-
-/*
-1. Create a class named Vehicle2
-			Variables:
-				brand, model, year, color, price
-
-			Encapsulate all the fields
-
-			Add a constructor that can set all the fields
-
-			Methods:
-				toString()
-
-	2. Create a sub class of Vehicle2 named Car
-
-			Extra methods:
-				drive()
-
-	3. Create a sub class of Vehicle2 named Bike
-
-			Extra methods:
-				ride()
-
-	4. Create a sub class of Vehicle2 named Boat
-
-			Extra methods:
-				sail()
-
-	5. Create a sub class of Vehicle2 named AirPlane
-
-			Extra methods:
-				fly()
-
-
-
- */
