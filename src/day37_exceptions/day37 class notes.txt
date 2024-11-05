@@ -32,6 +32,12 @@ Exceptions Topics:
 	1. Exceptions Intro
 // unwanted or unexpected events
 
+// when the exception obj passed to the catch block it will be assigned to a ref var
+// in the try block there's no ref var that will ref to the exception obj
+// if try block handles the exception then exception obj will be collected by garbage coll
+// if try block can't handle then exception will be passed to the catch block and assigned to the ref var
+// through the ref var we can call printStackTrace() and getMessage() methods (they are m from RuntimeException class)
+
 	2. Checkd & unchecked
 	3. Try & Cacth
 	
