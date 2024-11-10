@@ -30,5 +30,23 @@ public class MultiCatchBlock {
         }
 
         System.out.println("Programme1 ended");
+
+        System.out.println("---");
+
+        // every try block should have one catch block so after the catch block we can't have other try blocks like below:
+        /*
+        try{
+
+        }catch (RuntimeException e) {
+
+        }try{
+
+        }try{
+
+        }try{
+
+        }*/
     }
+
+
 }

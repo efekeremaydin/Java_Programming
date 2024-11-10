@@ -1,5 +1,8 @@
 package day37_exceptions;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class TryCatchBlocks2 {
 
     public static void main(String[] args) {
@@ -32,6 +35,32 @@ public class TryCatchBlocks2 {
         }
 
         System.out.println("Programme2 ended");
+
+        System.out.println("---");
+
+        System.out.println("Programme3 started");
+
+        try {
+            FileInputStream file = new FileInputStream(""); // this class has throws keyword in the signature that's why it throws exception
+        } catch (FileNotFoundException e) {
+            //throw new RuntimeException(e);
+          e.printStackTrace();
+        }
+
+        System.out.println("Programme3 ended");
+
+
+        System.out.println("---");
+
+        System.out.println("Programme4 started");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+        System.out.println("Programme4 ended");
 
     }
 }
